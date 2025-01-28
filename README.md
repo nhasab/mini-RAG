@@ -74,5 +74,36 @@ In a RAG model, the retrieval component is responsible for searching a large dat
 
 The key advantage of RAG models is that they can leverage the vast amount of knowledge stored in large databases or knowledge bases, while also being able to generate novel and context-specific responses.
 
+9. **Install FastAPI and Uvicorn**:
+	* Install FastAPI by typing `pip install fastapi[standard]`.
+	* Install Uvicorn by typing `pip install uvicorn[standard]`.
+10. **Create a new FastAPI project**:
+	* Create a new directory for your project and navigate into it.
+	* Create a new file named `main.py` and add the following code:
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+```
+	* Run the application by typing `uvicorn main:app --reload`.
+	* Open a web browser and navigate to `http://localhost:8000/` to see the application in action.
+11. **Install additional FastAPI dependencies**:
+	* Install Python-Multipart by typing `pip install python-multipart`.
+12. **Verify the installation of additional dependencies**:
+	* Verify the installation of Python-Multipart by typing `python -c "from fastapi import UploadFile; print(UploadFile)"`.
+13. **Start building your FastAPI API**:
+	* Start building your FastAPI API by creating routes and models as needed.
+	* Use FastAPI's built-in features for form handling and API endpoints.
+
+	* Run the FastAPI application by typing `C`.
+	* Open a terminal or command prompt and navigate to the directory where your `main.py` file is located.
+	* Type `uvicorn main:app --reload` and press Enter to start the application.
+	* Open a web browser and navigate to `http://localhost:8000/` to see the application in action.
+
+
 
 
